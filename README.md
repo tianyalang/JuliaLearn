@@ -1,2 +1,3 @@
-# JuliaLearn
- Julia编程语言学习
+# Julia 语言学习
+
+[包管理](doc/包管理.md)
