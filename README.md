@@ -7,3 +7,4 @@
 ## 网络资源
 
 - [Julia 中文文档](https://cn.julialang.org/JuliaZH.jl/latest/)
+- [Julia Tutorials, 来自Github, Notebook形式](https://github.com/JuliaAcademy/JuliaTutorials)

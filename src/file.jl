@@ -2,6 +2,7 @@
 # srm(3,8)
 
 # read from .txt
+# The "do" block will automatically close the file when it's finished.
 txt = open("./data/00.txt") do file
     read(file, String)
 end;
@@ -9,8 +10,6 @@ println(txt)
 
 # write string to .txt
 s = "hello world!\n好人一生平安\n"
-
-# The "do" block will automatically close the file when it's finished.
 open("./data/01.txt", "w") do io
     write(io, s)
 end
