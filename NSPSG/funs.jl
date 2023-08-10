@@ -41,10 +41,19 @@ function kv(delta, bv, overlap=1)
 #   bv: 通风道宽
 #   delta: 气隙长度
 #   overlap: 1 for 定转子通风道不对齐; 2 for 定转子通风道对齐
-
 x = bv./delta
 if overlap == 2
     x = 2 .* x
 end
 y = x ./ (5 .+ x)
+end
+
+function lef(lt, delta, nv1=0, bv1p=0, nv2=0, bv2p=0)
+# 铁芯有效长度、计算长度
+# input: lt
+if nv1 == 0
+    return lt + 2delta
+else
+    return lt - nv1*bv1p - nv2*bv2p
+end
 end
