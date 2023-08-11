@@ -57,3 +57,5 @@ else
     return lt - nv1*bv1p - nv2*bv2p
 end
 end
+
+
