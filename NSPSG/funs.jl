@@ -61,3 +61,21 @@ function lef(lt, delta, nv1=0, bv1p=0, nv2=0, bv2p=0)
 end
 
 
+function kp(y, tau, nu)
+    # 节距因数
+    # input:
+    #   y:节距
+    #   tau:极距
+    #   nu:谐波次数, 1,3,5...
+    y = sind(nu*y/tau*90)
+end
+
+function kd(q, alpha, nu)
+    # 绕组分布因数
+    # input:
+    #   q:每极每相槽数
+    #   alpha:每槽所占电角度
+    #   nu: 谐波次数, 1,3,5...
+    x = nu*alpha/2
+    y = sin(q*x)/sin(x)/q
+end
