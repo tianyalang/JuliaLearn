@@ -1,5 +1,5 @@
 
-# include("./funs.jl")
+# include("./NSPSG/funs.jl")
 
 # x = 0.1:0.1:7
 
@@ -11,7 +11,7 @@
 
 # plot(x, y, x, z, "o-")
 
-# lef(10,3,2,1.3,3,2.2)
+lef(10,3,2,1.3,3,2.2)
 
 delta = 8E-3
 D = 540E-3
