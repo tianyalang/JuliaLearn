@@ -1,8 +1,8 @@
 
 include("./funs.jl")
 
-y = kv(6, 8, false)
-
+y = kv(6, 10)
+lef(454,6,8,y*10)
 # t = 0:0.1:7
 # A = sin.(t)
 # B = sin.(t .- 2 * pi / 3)
