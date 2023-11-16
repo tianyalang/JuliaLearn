@@ -35,14 +35,14 @@ function kdelta(delta, t, b0, slottype=1)
 end
 
 
-function kv(delta, bv, overlap=1)
+function kv(delta, bv, isalign=true)
     # 径向通风道引起铁芯长度的损失系数, 用于铁芯有效长度的计算
     # input:
     #   bv: 通风道宽
     #   delta: 气隙长度
-    #   overlap: 1 for 定转子通风道不对齐; 2 for 定转子通风道对齐
+    #   isalign: true:定转子通风道对齐; false:定转子通风道不对齐
     x = bv ./ delta
-    if overlap == 2
+    if isalign
         x = 2 .* x
     end
     y = x ./ (5 .+ x)

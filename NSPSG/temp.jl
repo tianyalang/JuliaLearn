@@ -1,27 +1,29 @@
 
-# include("./NSPSG/funs.jl")
+include("./funs.jl")
 
-t = 0:0.1:7
-A = sin.(t)
-B = sin.(t .- 2 * pi / 3)
-C = sin.(t .- 4 * pi / 3)
+y = kv(6, 8, false)
 
-a1 = 0.5 .* sin.(t .- pi / 24)
-a2 = 0.5 .* sin.(t .- 3 * pi / 24)
-a3 = 0.5 .* sin.(t .- 5 * pi / 24)
-a4 = 0.5 .* sin.(t .- 7 * pi / 24)
+# t = 0:0.1:7
+# A = sin.(t)
+# B = sin.(t .- 2 * pi / 3)
+# C = sin.(t .- 4 * pi / 3)
 
-b1 = 0.5 .* sin.(t .- pi / 24 .-2*pi/3)
-b2 = 0.5 .* sin.(t .- 3 * pi / 24 .-2*pi/3)
-b3 = 0.5 .* sin.(t .- 5 * pi / 24 .-2*pi/3)
-b4 = 0.5 .* sin.(t .- 7 * pi / 24 .-2*pi/3)
+# a1 = 0.5 .* sin.(t .- pi / 24)
+# a2 = 0.5 .* sin.(t .- 3 * pi / 24)
+# a3 = 0.5 .* sin.(t .- 5 * pi / 24)
+# a4 = 0.5 .* sin.(t .- 7 * pi / 24)
 
-c1 = 0.5 .* sin.(t .- pi / 24 .- 4 * pi / 3)
-c2 = 0.5 .* sin.(t .- 3 * pi / 24 .- 4 * pi / 3)
-c3 = 0.5 .* sin.(t .- 5 * pi / 24 .- 4 * pi / 3)
-c4 = 0.5 .* sin.(t .- 7 * pi / 24 .- 4 * pi / 3)
+# b1 = 0.5 .* sin.(t .- pi / 24 .-2*pi/3)
+# b2 = 0.5 .* sin.(t .- 3 * pi / 24 .-2*pi/3)
+# b3 = 0.5 .* sin.(t .- 5 * pi / 24 .-2*pi/3)
+# b4 = 0.5 .* sin.(t .- 7 * pi / 24 .-2*pi/3)
 
-plot(t .* 180 / pi, [A B C a1 a2 a3 a4 b1 b2 b3 b4 c1 c2 c3 c4])
+# c1 = 0.5 .* sin.(t .- pi / 24 .- 4 * pi / 3)
+# c2 = 0.5 .* sin.(t .- 3 * pi / 24 .- 4 * pi / 3)
+# c3 = 0.5 .* sin.(t .- 5 * pi / 24 .- 4 * pi / 3)
+# c4 = 0.5 .* sin.(t .- 7 * pi / 24 .- 4 * pi / 3)
+
+# plot(t .* 180 / pi, [A B C a1 a2 a3 a4 b1 b2 b3 b4 c1 c2 c3 c4])
 
 # y = rho(x)
 # y = kdelta(1, 10, 5)
