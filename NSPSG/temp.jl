@@ -1,29 +1,19 @@
 
 include("./funs.jl")
 
-y = kv(6, 10)
-lef(454,6,8,y*10)
-# t = 0:0.1:7
-# A = sin.(t)
-# B = sin.(t .- 2 * pi / 3)
-# C = sin.(t .- 4 * pi / 3)
 
-# a1 = 0.5 .* sin.(t .- pi / 24)
-# a2 = 0.5 .* sin.(t .- 3 * pi / 24)
-# a3 = 0.5 .* sin.(t .- 5 * pi / 24)
-# a4 = 0.5 .* sin.(t .- 7 * pi / 24)
+l = (pi*25 + (1553-15)*2)/1000
+s = flatWireArea(9, 2.4)
+r = rho(115)*l/s/14/2
 
-# b1 = 0.5 .* sin.(t .- pi / 24 .-2*pi/3)
-# b2 = 0.5 .* sin.(t .- 3 * pi / 24 .-2*pi/3)
-# b3 = 0.5 .* sin.(t .- 5 * pi / 24 .-2*pi/3)
-# b4 = 0.5 .* sin.(t .- 7 * pi / 24 .-2*pi/3)
-
-# c1 = 0.5 .* sin.(t .- pi / 24 .- 4 * pi / 3)
-# c2 = 0.5 .* sin.(t .- 3 * pi / 24 .- 4 * pi / 3)
-# c3 = 0.5 .* sin.(t .- 5 * pi / 24 .- 4 * pi / 3)
-# c4 = 0.5 .* sin.(t .- 7 * pi / 24 .- 4 * pi / 3)
-
-# plot(t .* 180 / pi, [A B C a1 a2 a3 a4 b1 b2 b3 b4 c1 c2 c3 c4])
+Di1 = 540
+hs0 = 1
+hs1 = 5
+hs2 = 66
+Rs = 0
+beta = 20/24
+p = 1
+t = pi/2/p*(Di1+2*(hs0+hs1)+hs2+Rs)*beta
 
 # y = rho(x)
 # y = kdelta(1, 10, 5)
