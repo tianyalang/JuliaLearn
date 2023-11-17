@@ -6,7 +6,7 @@ function rho(t, material=1)
     # output:
     #   y: electrical resistivity. Unit: ohm.mm^2/m
     if material == 1
-        rho0 = 0.0164   # 0°C 电阻率
+        rho0 = 0.0164   # 0°C 电阻率, Unit: ohm.mm^2/m
         alpha = 4.3E-3  # 电阻温度系数, Unit: /°C
     else
         rho0 = 0.0254
@@ -78,4 +78,24 @@ function kd(q, alpha, nu)
     #   nu: 谐波次数, 1,3,5...
     x = nu*alpha/2
     y = sin(q*x)/sin(x)/q
+end
+
+function flatWireArea(width, height)
+    #= 扁线面积计算
+    input:
+        width:宽边/mm
+        height:窄边/mm
+    =#
+    if height <= 1
+        r = height/2
+    elseif height <= 1.6
+        r = 0.5
+    elseif height < 2.3
+        r = 0.65
+    elseif height < 3.6
+        r = 0.8
+    else
+        r = 1
+    end
+    S = width*height - (4-pi)*r^2
 end
