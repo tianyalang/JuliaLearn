@@ -1,19 +1,20 @@
-
+include("./MotorStruct.jl")
 include("./funs.jl")
 
+p = NSPSG("srz", 11)
 
 l = (pi*25 + (1553-15)*2)/1000
 s = flatWireArea(9, 2.4)
-r = rho(115)*l/s/14/2
+r = rho(115)*l/s/14/2*8
 
-Di1 = 540
-hs0 = 1
-hs1 = 5
-hs2 = 66
-Rs = 0
-beta = 20/24
-p = 1
-t = pi/2/p*(Di1+2*(hs0+hs1)+hs2+Rs)*beta
+# Di1 = 540
+# hs0 = 1
+# hs1 = 5
+# hs2 = 66
+# Rs = 0
+# beta = 20/24
+# p = 1
+# t = pi/2/p*(Di1+2*(hs0+hs1)+hs2+Rs)*beta
 
 # y = rho(x)
 # y = kdelta(1, 10, 5)
