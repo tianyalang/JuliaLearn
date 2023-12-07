@@ -43,7 +43,7 @@ end
 
 function v(s)
     # 圆周速度/ m/s
-    2*f*tao(s)/1000
+    2*s.f*tao(s)/1000
 end
 
 function Fb(s)
@@ -68,3 +68,21 @@ function W(alpha, n=1)
     # n=1,3,5,7....
     4/pi/alpha*sin(n*alpha)/n^2
 end
+
+function Z1(s)
+    # 定子槽数
+    s.p * s.m * s.q * 2
+end
+
+function Kdp(s)
+    # 绕组系数
+    beta = s.y1/s.m/s.q
+    Kp = sin(beta*pi/2)  # 短矩系数
+    Kd = sin(pi/2/s.m)/s.q/sin(pi/2/s.m/s.q)  # 分布系数
+    Kp*Kd
+end
+
+function N(s)
+    # 每相串联导体数
+    s.Ns*Z1(s)/s.m/s.a
+end 
