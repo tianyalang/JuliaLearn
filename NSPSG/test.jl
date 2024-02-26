@@ -35,3 +35,4 @@ p = NSPSG(
 # Z1(p)
 # Kdp(p)
 N(p)
+skewAngle(p)

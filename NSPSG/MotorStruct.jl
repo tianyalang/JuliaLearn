@@ -12,7 +12,7 @@ struct NSPSG
 
     D1::Float16     # 定子外径/mm
     Di1::Float32    # 定子内径/mm
-    δ::Float16      # 单边气隙
+    delta::Float16  # 单边气隙
     Di::Float16     # 转子内径
     lt::Float16     # 定子铁芯总长
     lm::Float16     # 转子铁芯总长
@@ -85,4 +85,9 @@ end
 function N(s)
     # 每相串联导体数
     s.Ns*Z1(s)/s.m/s.a
-end 
+end
+
+function skewAngle(s)
+    # 斜槽偏移角
+    atand(pi*s.Di1/Z1(s)/s.lt)
+end
