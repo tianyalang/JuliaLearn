@@ -29,7 +29,7 @@ function kdelta(delta, t, b0, slottype=1)
     if slottype == 1
         gamma = x.^2 ./ (5 .+ x)
     else
-        gamma = x.^2 ./(4.4 .+ 0.75 .*x)
+        gamma = x.^2 ./(4.4 .+ 0.75 .*x) 
     end
     y = t./(t .-gamma .*delta)
 end
