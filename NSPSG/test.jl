@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 include("./MotorStruct.jl")
 
 
@@ -37,11 +36,3 @@ p = NSPSG(
 # Kdp(p)
 N(p)
 skewAngle(p)
-=======
-include("./funs.jl")
-
-L = (1310-15)*2+pi*15
-s = flatWireArea(9, 2.5)
-
-r = rho(20)*L/s/4*4/1000
->>>>>>> Stashed changes
