@@ -1,8 +1,6 @@
+include("./funs.jl")
 
-# l = (pi*25 + (1553-15)*2)/1000
-# s = flatWireArea(9, 2.4)
-# r = rho(115)*l/s/14/2*8
-
+flatWireArea(8,3.15)
 
 # Di1 = 540
 # hs0 = 1
