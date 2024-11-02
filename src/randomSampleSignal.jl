@@ -1,5 +1,5 @@
 using Plots
-# plotyjs()
+plotlyjs()
 
 # 采样频率为 1 kHz，信号持续时间为 1.5 秒。
 Fs = 1000
