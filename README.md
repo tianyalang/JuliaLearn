@@ -9,3 +9,4 @@
 
 - [Julia 中文文档](https://cn.julialang.org/JuliaZH.jl/latest/)
 - [Julia Tutorials, 来自Github, Notebook形式](https://github.com/JuliaAcademy/JuliaTutorials)
+- [Plots包官方文档](https://docs.juliaplots.org/latest/tutorial/)
