@@ -1,4 +1,4 @@
-clear()
+# clear()
 include("./funs.jl")
 
 # 圆盘线圈电阻计算

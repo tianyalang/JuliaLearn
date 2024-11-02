@@ -1,8 +1,6 @@
 # non-salient pole synchronous generator 隐极同步发电机
 # 电磁计算输入数据
 
-clear()
-
 SN = 320  # 额定容量/kVA
 UN = 400  # 额定电压/V
 cosphi = 0.8
