@@ -9,5 +9,6 @@
 
 - [Julia 中文文档](https://cn.julialang.org/JuliaZH.jl/latest/)
 - [Julia Tutorials, 来自Github, Notebook形式](https://github.com/JuliaAcademy/JuliaTutorials)
+- [Julia语言入门——北京大学数学学院李东风](https://www.math.pku.edu.cn/teachers/lidf/docs/Julia/html/_book/index.html)
 - [Julia 全部官方注册包](https://juliapackages.com/packages)
 - [Plots包官方文档](https://docs.juliaplots.org/latest/tutorial/)
