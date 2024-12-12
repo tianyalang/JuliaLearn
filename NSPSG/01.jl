@@ -1,4 +1,4 @@
-
+# 先运行 data.jl
 # 计算参数
 p = 60f / nN # 极对数
 IN = SN * 1e3 / sqrt(3) / UN # 额定电流/A
